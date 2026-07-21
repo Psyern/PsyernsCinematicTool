@@ -1,0 +1,5 @@
+enum EPCT_RPC
+{
+	INVALID = 10500,
+	COUNT
+}

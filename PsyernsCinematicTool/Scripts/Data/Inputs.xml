@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+    <inputs>
+        <actions>
+            <input name="UAPCT_ToggleMenu" loc="STR_PCT_INPUT_TOGGLE_MENU" />
+        </actions>
+
+        <sorting name="PCT" loc="PCT">
+            <input name="UAPCT_ToggleMenu" />
+        </sorting>
+    </inputs>
+
+    <preset>
+        <input name="UAPCT_ToggleMenu">
+        </input>
+    </preset>
+</modded_inputs>
