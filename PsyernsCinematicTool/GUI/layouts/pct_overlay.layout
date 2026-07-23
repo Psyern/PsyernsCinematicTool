@@ -1,0 +1,119 @@
+PanelWidgetClass PCT_OverlayHud {
+ ignorepointer 1
+ visible 0
+ color 0 0 0 0
+ position 0 0
+ size 1 1
+ halign left_ref
+ valign top_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass pct_overlay_third_h1 {
+   ignorepointer 1
+   color 1 1 1 0.6
+   position 0 0.3333
+   size 1 1
+   vexactsize 1
+  }
+  PanelWidgetClass pct_overlay_third_h2 {
+   ignorepointer 1
+   color 1 1 1 0.6
+   position 0 0.3333
+   size 1 1
+   vexactsize 1
+   valign bottom_ref
+  }
+  PanelWidgetClass pct_overlay_third_v1 {
+   ignorepointer 1
+   color 1 1 1 0.6
+   position 0.3333 0
+   size 1 1
+   hexactsize 1
+  }
+  PanelWidgetClass pct_overlay_third_v2 {
+   ignorepointer 1
+   color 1 1 1 0.6
+   position 0.3333 0
+   size 1 1
+   hexactsize 1
+   halign right_ref
+  }
+  PanelWidgetClass pct_overlay_center_h {
+   ignorepointer 1
+   color 1 1 1 0.8
+   position 0 0
+   size 20 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+  PanelWidgetClass pct_overlay_center_v {
+   ignorepointer 1
+   color 1 1 1 0.8
+   position 0 0
+   size 1 20
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+  PanelWidgetClass pct_overlay_mask_top {
+   ignorepointer 1
+   visible 0
+   color 0 0 0 1
+   position 0 0
+   size 1 1
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+  PanelWidgetClass pct_overlay_mask_bottom {
+   ignorepointer 1
+   visible 0
+   color 0 0 0 1
+   position 0 0
+   size 1 1
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+  PanelWidgetClass pct_overlay_mask_left {
+   ignorepointer 1
+   visible 0
+   color 0 0 0 1
+   position 0 0
+   size 1 1
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+  PanelWidgetClass pct_overlay_mask_right {
+   ignorepointer 1
+   visible 0
+   color 0 0 0 1
+   position 0 0
+   size 1 1
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+  CanvasWidgetClass pct_overlay_path_canvas {
+   ignorepointer 1
+   color 1 1 1 1
+   position 0 0
+   size 1 1
+  }
+ }
+}

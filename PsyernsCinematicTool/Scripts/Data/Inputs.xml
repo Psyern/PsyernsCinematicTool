@@ -3,15 +3,50 @@
     <inputs>
         <actions>
             <input name="UAPCT_ToggleMenu" loc="STR_PCT_INPUT_TOGGLE_MENU" />
+            <input name="UAPCT_ToggleCamera" loc="STR_PCT_INPUT_TOGGLE_CAMERA" />
+            <!-- Task P2-4 (Docs/Plan_B5_UI_UX.md Section 7): "ohne Default (ueber Optionen belegbar)",
+                 bewusst kein Preset Eintrag unten, Nutzer weist die Taste selbst in den
+                 COT/Steuerungsoptionen zu. -->
+            <input name="UAPCT_ApplyFraming" loc="STR_PCT_INPUT_APPLY_FRAMING" />
+            <!-- Task P3-5 (Plan_B7 Section 15 / Plan_B5 Section 7): Sequencer-Actions, alle ohne
+                 Default-Bind (Risiko R6). -->
+            <input name="UAPCT_AddCamPoint" loc="STR_PCT_INPUT_ADD_CAM_POINT" />
+            <input name="UAPCT_AddLookPoint" loc="STR_PCT_INPUT_ADD_LOOK_POINT" />
+            <input name="UAPCT_PlayPause" loc="STR_PCT_INPUT_PLAY_PAUSE" />
+            <input name="UAPCT_TogglePathViz" loc="STR_PCT_INPUT_TOGGLE_PATH_VIZ" />
         </actions>
 
         <sorting name="PCT" loc="PCT">
             <input name="UAPCT_ToggleMenu" />
+            <input name="UAPCT_ToggleCamera" />
+            <input name="UAPCT_ApplyFraming" />
+            <input name="UAPCT_AddCamPoint" />
+            <input name="UAPCT_AddLookPoint" />
+            <input name="UAPCT_PlayPause" />
+            <input name="UAPCT_TogglePathViz" />
         </sorting>
     </inputs>
 
     <preset>
         <input name="UAPCT_ToggleMenu">
+        </input>
+
+        <input name="UAPCT_ToggleCamera">
+        </input>
+
+        <input name="UAPCT_ApplyFraming">
+        </input>
+
+        <input name="UAPCT_AddCamPoint">
+        </input>
+
+        <input name="UAPCT_AddLookPoint">
+        </input>
+
+        <input name="UAPCT_PlayPause">
+        </input>
+
+        <input name="UAPCT_TogglePathViz">
         </input>
     </preset>
 </modded_inputs>
