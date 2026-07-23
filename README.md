@@ -1,6 +1,5 @@
-<!-- Drop a 1280×320 banner at Docs/pct_banner.png to fill this in; alt text shows until then. -->
 <p align="center">
-  <img src="Docs/pct_banner.png" alt="Psyerns Cinematic Tool" width="820">
+  <img src="assets/pct_banner.png" alt="Psyerns Cinematic Tool" width="820">
 </p>
 
 <p align="center">
@@ -97,33 +96,33 @@ PsyernsCinematicTool/                                  # mod folder (CfgMods dir
 
 ## Features
 
-### 🎥 Photographic Camera Model
+### Photographic Camera Model
 - **Sensor presets** (6, incl. Full Frame / Super 35) drive the FOV — no more eyeballing a raw angle.
 - **Focal length** slider (8–400 mm); vertical FOV computed from real optics and clamped to the engine's
   displayable range (14–200 mm effective).
 - **Aperture** (T/f 0.7–32) with a bokeh model — depth of field via `PPEffects.OverrideDOF`.
 - **Focus distance** pull with a live focal-plane; cleanly reset when you leave the camera.
 
-### 🔭 Lens Kits
+### Lens Kits
 - Built-in **ZEISS Supreme Prime Radiance** set (8 primes) with true T-stop labels and per-lens aperture limits.
 - **Prime-lock** mode snaps you to real focal lengths; **close-focus clamp** mirrors each lens's minimum
   focus distance (with an optional override for extension-tube looks).
 
-### 🖼️ Composition & Overlays
+### Composition & Overlays
 - Rule-of-**thirds** grid, **center** cross, and **aspect masks** — 2.39:1, 16:9, 4:3, 9:16, 1:1.
 - Every overlay toggles independently; masks are pixel-accurate at matching resolutions.
 
-### 🎯 Auto-Framing
+### Auto-Framing
 - Raycast a subject, then apply a **framing preset** (10 built-ins: CU, MS, WS, …) and an **angle preset**
   (11 built-ins: eye level, low, high, overhead, …). Exact pinhole geometry places the camera for you.
 
-### 🎞️ Shots & Presets
+### Shots & Presets
 - **Capture / apply** a full rig state (position, orientation, sensor, focal length, aperture, focus, mask).
 - **Shot browser** — list, apply, rename, delete, all persisted as `Shots\<id>.json`.
 - **Seven preset families** (sensors, lenses, lens kits, framings, angles, movements, lights, world states),
   each with built-ins plus your own user presets.
 
-### 🛤️ Camera Movement — Dual-Path Sequencer
+### Camera Movement — Dual-Path Sequencer
 - Separates the **camera path** (`PCT_CameraPath`) from the **look path** (`PCT_LookPath`) over one shared timeline.
 - **7 path types** and **7 look modes** (LookAt, Follow, Free-rotation, Horizon-lock, …).
 - **Multi-track keyframes** for focal length, aperture, focus and height; an **11-easing** catalog
@@ -131,11 +130,11 @@ PsyernsCinematicTool/                                  # mod folder (CfgMods dir
 - **Deterministic scrubbing**, an on-screen **path visualization** overlay, and one-click **movement presets**
   (Dolly In/Out, Truck, Orbit 90°, Dolly-Zoom).
 
-### 📤 Export
+### Export
 - **CSV** (31-column shot list, RFC-4180 escaping, configurable delimiter) and **JSON** export.
 - **Screenshots** via the engine's `MakeScreenshot`, named per shot.
 
-### 🧩 COT Integration
+### COT Integration
 - Appears as a native entry in the **COT sidebar**; gated by COT permissions (`CinematicTool.View`,
   `CinematicTool.Export`, …).
 - Its **own** Enter/Leave camera path (COT's freecam isn't remote-controlled), plus an automatic
@@ -290,12 +289,12 @@ later phases is ongoing.
 
 | Phase | Scope | Status |
 |---|---|---|
-| **0** | Mod skeleton · COT module · build pipeline | ✅ Accepted |
-| **1** | Camera core · photographic model · DOF · overlays | ✅ Implemented (in-game DoD in progress) |
-| **2** | Shots · presets · auto-framing · lens kits · export | ✅ Implemented (in-game DoD in progress) |
-| **3** | Dual-path sequencer · movement presets · path viz | ✅ Implemented (in-game DoD in progress) |
-| **4** | World (time/weather) · actors · lights · continuity assistants | 🔜 Planned |
-| **5** | Polish · release | 🔜 Planned |
+| **0** | Mod skeleton · COT module · build pipeline | Accepted |
+| **1** | Camera core · photographic model · DOF · overlays | Implemented (in-game DoD in progress) |
+| **2** | Shots · presets · auto-framing · lens kits · export | Implemented (in-game DoD in progress) |
+| **3** | Dual-path sequencer · movement presets · path viz | Implemented (in-game DoD in progress) |
+| **4** | World (time/weather) · actors · lights · continuity assistants | Planned |
+| **5** | Polish · release | Planned |
 
 See [`Docs/`](Docs/) for the full architecture, data model, camera engine, and per-phase DoD protocols.
 
